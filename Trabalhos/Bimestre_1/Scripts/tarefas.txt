@@ -1,0 +1,3 @@
+1 - Montar uma lista de objetos "alunos" em um arquivo .mjs na pasta Dados onde cada aluno deve conter Nome, RA, idade, sexo, média e resultado;
+2 - Criar arquivo .mjs na pasta "Scripts" com a função de Cadastrar alunos nessa lista de objetos "alunos";
+3 - Criar arquvio .mjs na pasta "Scripts" com a função de ordenar essa lista de objetos "alunos" em ordem crescente 
