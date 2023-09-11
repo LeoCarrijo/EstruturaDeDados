@@ -1,3 +1,3 @@
-import { objAlunos } from '../Dados/alunos.mjs'
+import { alunos } from '../Dados/alunos.mjs'
 
-console.log()
+console.log(alunos[0].nome)

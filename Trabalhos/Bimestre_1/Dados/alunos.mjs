@@ -1,4 +1,4 @@
-alunos = [{
+export const alunos = [{
     nome: 'Leonardo Henrique Carrijo',
     ra: '1090482223015',
     idade: 20,
