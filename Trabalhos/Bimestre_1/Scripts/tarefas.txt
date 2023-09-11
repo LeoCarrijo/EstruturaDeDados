@@ -1,3 +1,6 @@
 1 - Montar uma lista de objetos "alunos" em um arquivo .mjs na pasta Dados onde cada aluno deve conter Nome, RA, idade, sexo, média e resultado;
 2 - Criar arquivo .mjs na pasta "Scripts" com a função de Cadastrar alunos nessa lista de objetos "alunos";
-3 - Criar arquvio .mjs na pasta "Scripts" com a função de ordenar essa lista de objetos "alunos" em ordem crescente 
+3 - Criar arquvio .mjs na pasta "Scripts" com a função de ordenar essa lista de objetos "alunos" em ordem crescente pelo Nome
+4 - Criar arquivo .mjs na pasta "Scripts" com a função de ordenar essa lista de objetos "alunos" em ordem decrescente por RA
+5 - Criar arquivo com a função de gerar relatório da lista de alunos (Ela não deve ordenar a lista, apenas mostrá-la,)
+    5.1 - Nessa função, devemos ter a opção de gerar relatórios de todos alunos, só dos aprovados ou só dos reprovados
