@@ -1,6 +1,6 @@
 import { alunos } from '../Dados/alunos.mjs'
 
-function OrdenarBubble(vetor, fnComp) {
+function OrdenarBubble(vetor, fnComp) { // Função que ordena o vetor passado com o BubbleSort
     let swap
     do{
         swap = false
@@ -13,9 +13,9 @@ function OrdenarBubble(vetor, fnComp) {
     }while(swap)
 }
 
-function OrdenarPorRa(vetor){
-    OrdenarBubble(vetor, (obj1, obj2) => obj1.ra < obj2.ra)
+export function OrdenarPorRa(vetor){
+    OrdenarBubble(vetor, (obj1, obj2) => obj1.ra < obj2.ra) // Ordena o vetor passado pelo ra de forma decrescente
 }
-function OrdenarPorNome(vetor){
-    OrdenarBubble(vetor, (obj1, obj2) => obj1.nome > obj2.nome)
+export function OrdenarPorNome(vetor){
+    OrdenarBubble(vetor, (obj1, obj2) => obj1.nome > obj2.nome) // Ordena o vetor passado pelo nome de forma crescente
 }
