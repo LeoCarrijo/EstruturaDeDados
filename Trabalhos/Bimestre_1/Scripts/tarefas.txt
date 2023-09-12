@@ -4,3 +4,8 @@
 4 - Criar arquivo .mjs na pasta "Scripts" com a função de ordenar essa lista de objetos "alunos" em ordem decrescente por RA
 5 - Criar arquivo com a função de gerar relatório da lista de alunos (Ela não deve ordenar a lista, apenas mostrá-la,)
     5.1 - Nessa função, devemos ter a opção de gerar relatórios de todos alunos, só dos aprovados ou só dos reprovados
+6 - Depois de Todas as ordenações feitas em BubbleSort, elas devem ser todas refeitas em outros arquivos com as ordenações:
+    6.1 - Selection Sort;
+    6.2 - Merge Sort;
+    6.3 - Quick Sort
+7 - Depois de feitas todas elas, verificar qual tem a maior eficiência

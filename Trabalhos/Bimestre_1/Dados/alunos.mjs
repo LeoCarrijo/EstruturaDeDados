@@ -13,5 +13,13 @@ export const alunos = [{
     sexo: 'M',
     media: 6,
     aprovado: true
+},
+{
+    nome: 'Beatriz',
+    ra: '1090482223033',
+    idade: 23,
+    sexo: 'F',
+    media: 8,
+    aprovado: true
 }
 ]
