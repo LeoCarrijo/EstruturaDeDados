@@ -1,6 +1,6 @@
 export const alunos = [{
     nome: 'Leonardo Henrique Carrijo',
-    ra: '1090482223015',
+    ra: '1090482223007',
     idade: 20,
     sexo: 'M',
     media: 6,
@@ -8,7 +8,7 @@ export const alunos = [{
 },
 {
     nome: 'Hugo Henrique Lourenço',
-    ra: '1090482223018',
+    ra: '1090482223033',
     idade: 20,
     sexo: 'M',
     media: 6,
@@ -16,7 +16,7 @@ export const alunos = [{
 },
 {
     nome: 'Beatriz',
-    ra: '1090482223033',
+    ra: '1090482223015',
     idade: 23,
     sexo: 'F',
     media: 8,
