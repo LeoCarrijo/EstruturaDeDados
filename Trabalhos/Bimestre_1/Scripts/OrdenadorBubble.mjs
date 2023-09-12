@@ -1,6 +1,6 @@
 import { alunos } from '../Dados/alunos.mjs'
 
-export function OrdenarBubble(vetor, fnComp) {
+function OrdenarBubble(vetor, fnComp) {
     let swap
     do{
         swap = false
@@ -13,8 +13,9 @@ export function OrdenarBubble(vetor, fnComp) {
     }while(swap)
 }
 
-// console.log(alunos)
-// OrdenarBubble(alunos, (obj1, obj2) => obj1.ra < obj2.ra)
-// console.log(alunos)
-// OrdenarBubble(alunos, (obj1, obj2) => obj1.nome > obj2.nome)
-// console.log(alunos)
+function OrdenarPorRa(vetor){
+    OrdenarBubble(vetor, (obj1, obj2) => obj1.ra < obj2.ra)
+}
+function OrdenarPorNome(vetor){
+    OrdenarBubble(vetor, (obj1, obj2) => obj1.nome > obj2.nome)
+}
