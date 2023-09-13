@@ -26,5 +26,5 @@ export function OrdenarPorNome(vetor){
     OrdenarBubble(vetor, (obj1, obj2) => obj1.nome > obj2.nome) // Ordena o vetor passado pelo nome de forma crescente
 }
 
-OrdenarPorRa(alunos)
-OrdenarPorNome(alunos)
+// OrdenarPorRa(alunos)
+// OrdenarPorNome(alunos)
