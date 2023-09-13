@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Alunos</title>
+</head>
+
+<body>
+    <form method='POST' action='trabalho.html' onsubmit='return enviarDados()'>
+        <table>
+            <tr>
+                <td>NOME:</td>
+                <td><input type='text' name='nome' id='nome'></td>
+            </tr>
+            <tr>
+                <td>RA:</td>
+                <td><input type='text' name='RA' id='RA'></td>
+            </tr>
+            <tr>
+                <td>IDADE:</td>
+                <td><input type='text' name='idade' id='idade'></td>
+            </tr>
+            <tr>
+                <td>SEXO:</td>
+                <td><select name='sexo' id='sexo'>
+                        <option value="F">FEMININO</option>
+                        <option value="M">MASCULINO</option>
+                </td>
+            </tr>
+            <tr>
+                <td>MEDIA:</td>
+                <td><input type='text' name='media' id='media'></td>
+            </tr>
+            <tr>
+                <td><input type='button' value="Enviar Dados" onclick="enviarDados()"></td>
+            </tr>
+        </table>
+    </form>
+    <div id="res">
+
+    </div>
+    <script>
+        var objetosAlunos = [
+            {
+                nome: 'Leonardo Carrijo',
+                RA: '1090482223015',
+                idade: 20,
+                sexo: 'M',
+                media: 6,
+                resultado: 'Aprovado'
+            }
+        ]
+        
+        function enviarDados() {
+            var nome = document.getElementById('nome').value
+            var RA = document.getElementById('RA').value
+            var idade = document.getElementById('idade').value
+            var sexo = document.getElementById('sexo').value
+            var media = document.getElementById('media').value
+
+            objetosAlunos.push({
+                nome: nome,
+                RA: RA,
+                idade: idade,
+                sexo: sexo,
+                media: media,
+                resultado: 'Aprovado'
+            })
+
+            document.querySelector('div#res').innerHTML = `${objetosAlunos[1].nome}<br>${objetosAlunos[1].RA}<br>${objetosAlunos[1].idade}<br>${objetosAlunos[1].sexo}<br>${objetosAlunos[1].media}<br>${objetosAlunos[1].resultado}`
+        }
+    </script>
