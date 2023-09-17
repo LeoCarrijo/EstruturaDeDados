@@ -9,8 +9,13 @@
         padding: 10px;
         border-radius: 8px;
         background-image: linear-gradient(to bottom, $cor-2, $cor-3);
+        color: $cor-4;
+        font-weight: bold;
+        transition: .13s;
         &:hover {
             background-image: linear-gradient(to bottom, $cor-3, $cor-2);
+            color: $cor-1;
+            text-decoration: underline;
         }
     }
 }

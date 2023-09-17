@@ -6,6 +6,7 @@
   padding: 0px;
   margin: 0px;
   font-family: "Inter", sans-serif;
+  font-size: 18px;
 }
 
 .formulario {
@@ -24,7 +25,7 @@
   grid-area: labels;
 }
 .formulario .labels #sexo {
-  margin: 1.1rem 0px;
+  margin: 1.35rem 0px;
 }
 .formulario .inputs {
   display: flex;
@@ -40,6 +41,7 @@
   justify-content: center;
   width: 100vw;
   background-color: #EEEEEE;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.507);
 }
 
 .botoes {
@@ -54,7 +56,12 @@
   padding: 10px;
   border-radius: 8px;
   background-image: linear-gradient(to bottom, #176B87, #64CCC5);
+  color: #EEEEEE;
+  font-weight: bold;
+  transition: 0.13s;
 }
 .botoes input:hover {
   background-image: linear-gradient(to bottom, #64CCC5, #176B87);
+  color: #053B50;
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */
