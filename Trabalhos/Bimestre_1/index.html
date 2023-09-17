@@ -6,13 +6,6 @@
     <title>Cadastro de Alunos</title>
 </head>
 <body>
-    <ul>
-        <li>Cadastrar Alunos</li>
-        <li>Relatório de Alunos em ordem crescente por Nome</li>
-        <li>Relatório de Alunos em ordem descrescente por RA</li>
-        <li>Relatório de Alunos em ordem crescente por Nome, apenas dos Aprovados</li>
-        <li>Encerrar e execução do programa</li>
-    </ul>
     <label for="nome">Nome: </label>
     <input type="text" name="nome" id="nome"><br>
     <label for="ra">RA: </label>
@@ -26,10 +19,9 @@
     <input type="number" name="media" id="media"><br>
     <label>Aprovado: <input type="checkbox" id="aprovado"></label>
     <input type="button" value="Cadastrar Aluno" onclick="EnviarDados()">
-    <div class="resposta">
-        Resposta
-    </div>
+    <table class="tabela__relatorio">
+    </table>
 
-    <script src="Scripts/Cadastrador.mjs"></script>
+    <script src="Scripts/Script.mjs"></script>
 </body>
 </html>
