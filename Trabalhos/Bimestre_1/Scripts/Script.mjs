@@ -91,9 +91,15 @@ function OrdenarBubble(vetor, fnComp) { // Função que ordena o vetor passado c
 }
 function OrdenarPorRa(vetor){
     OrdenarBubble(vetor, (obj1, obj2) => obj1.ra < obj2.ra) // Ordena o vetor passado pelo ra de forma decrescente
+    GerarRelatorio(alunos, false)
 }
 function OrdenarPorNome(vetor){
     OrdenarBubble(vetor, (obj1, obj2) => obj1.nome > obj2.nome) // Ordena o vetor passado pelo nome de forma crescente
+    GerarRelatorio(alunos, false)
+}
+function OrdenarPorNomeAprovados(vetor) {
+    OrdenarBubble(vetor, (obj1, obj2) => obj1.nome > obj2.nome)
+    GerarRelatorio(alunos, true)
 }
 function EnviarDados() {
     let Aluno = {
