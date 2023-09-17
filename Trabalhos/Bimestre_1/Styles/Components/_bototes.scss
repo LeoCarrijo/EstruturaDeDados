@@ -1,0 +1,16 @@
+.botoes {
+    display: flex;
+    flex-direction: column;
+    grid-area: botao;
+    align-items: flex-start;
+    justify-content: space-around;
+    input {
+        height: 50px;
+        padding: 10px;
+        border-radius: 8px;
+        background-image: linear-gradient(to bottom, $cor-2, $cor-3);
+        &:hover {
+            background-image: linear-gradient(to bottom, $cor-3, $cor-2);
+        }
+    }
+}

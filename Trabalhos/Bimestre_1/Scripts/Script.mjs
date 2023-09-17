@@ -106,6 +106,7 @@ function EnviarDados() {
     }
     Cadastrar(Aluno)
     alert(`Aluno ${alunos[alunos.length - 1].nome} Cadastrado!`)
+    GerarRelatorio(alunos, false)
 }
 function Cadastrar(aluno) { // Função que recebe um aluno e o inclui na lista
     alunos.push(aluno)

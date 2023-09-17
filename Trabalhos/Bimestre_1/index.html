@@ -3,24 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Cadastro de Alunos</title>
 </head>
 <body>
-    <label for="nome">Nome: </label>
-    <input type="text" name="nome" id="nome"><br>
-    <label for="ra">RA: </label>
-    <input type="text" name="ra" id="ra"><br>
-    <label for="idade">Idade: </label>
-    <input type="number" name="idade" id="idade"><br>
-    <label for="sexo">Sexo: </label>
-    <label><input type="radio" name="sexo" id="mas" value="Masculino">Masculino</label>
-    <label><input type="radio" name="sexo" id="fem" value="Feminino">Feminino</label><br>
-    <label for="media">Média: </label>
-    <input type="number" name="media" id="media"><br>
-    <label>Aprovado: <input type="checkbox" id="aprovado"></label>
-    <input type="button" value="Cadastrar Aluno" onclick="EnviarDados()">
-    <table class="tabela__relatorio">
-    </table>
+    <header class="cabecalho">
+        <form class="formulario">
+                <div class="labels">
+                    <label for="nome">Nome: </label>
+                    <label for="ra">RA: </label>
+                    <label for="idade">Idade: </label>
+                    <label for="sexo" id="sexo">Sexo: </label>
+                    <label for="media">Média: </label>
+                    <label for="aprovado">Aprovado: </label>
+                </div>
+                <div class="inputs">
+                    <input type="text" name="nome" id="nome">
+                    <input type="text" name="ra" id="ra">
+                    <input type="number" name="idade" id="idade">
+                    <label><input type="radio" name="sexo" id="mas" value="Masculino" checked>Masculino</label>
+                    <label><input type="radio" name="sexo" id="fem" value="Feminino">Feminino</label>
+                    <input type="number" name="media" id="media">
+                    <input type="checkbox" id="aprovado">
+                </div>
+            <aside class="botoes">
+                <input type="button" value="Cadastrar Aluno" onclick="EnviarDados()">
+                <input type="button" value=" Relatório por Nome Crescente" onclick="EnviarDados()">
+                <input type="button" value="Relatório por RA Decrescente " onclick="EnviarDados()">
+                <input type="button" value="Gerar por Nome Crescente Apenas dos Aprovados" onclick="EnviarDados()">
+            </aside>
+        </form>
+    </header>
+    <main class="principal">
+        <table class="tabela__relatorio"></table>
+    </main>
+
 
     <script src="Scripts/Script.mjs"></script>
 </body>

@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Rowdies:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Rowdies:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Rowdies:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Rowdies:wght@300&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Inter", sans-serif;
+}
+
+.formulario {
+  display: grid;
+  grid-template-areas: "labels inputs botao";
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  justify-content: center;
+  width: 250px;
+  padding: 10px;
+}
+.formulario .labels {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  grid-area: labels;
+}
+.formulario .labels #sexo {
+  margin: 1.1rem 0px;
+}
+.formulario .inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  grid-area: inputs;
+  align-items: flex-start;
+}
+
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100vw;
+  background-color: #EEEEEE;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: column;
+  grid-area: botao;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.botoes input {
+  height: 50px;
+  padding: 10px;
+  border-radius: 8px;
+  background-image: linear-gradient(to bottom, #176B87, #64CCC5);
+}
+.botoes input:hover {
+  background-image: linear-gradient(to bottom, #64CCC5, #176B87);
+}/*# sourceMappingURL=style.css.map */
