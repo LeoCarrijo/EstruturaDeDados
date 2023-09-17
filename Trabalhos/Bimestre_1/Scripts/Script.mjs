@@ -112,22 +112,20 @@ function Cadastrar(aluno) { // Função que recebe um aluno e o inclui na lista
     alunos.push(aluno)
 }
 function GerarRelatorio(vetor, apenasAprovados){ // Função que gera os relatórios dos alunos
-    let alunoCont = 1
+    elementos.tabelaRelatorio.innerHTML = ''
+    GerarLinhaCabecalho()
     for(let i = 0; i < vetor.length; i++){
         if(!apenasAprovados){
             PrintarAluno(vetor, i)
-            alunoCont++
         }else{
             if(alunos[i].aprovado){
                 PrintarAluno(vetor, i)
-                alunoCont++
             }
         }
     }
 }
 function PrintarAluno(vetor, i){
     let tabela = elementos.tabelaRelatorio
-    const tabelaCabecalho = document.createElement('tr')
     const linha = document.createElement('tr')
     tabela.appendChild(linha)
     const nome = document.createElement('td')
@@ -138,11 +136,30 @@ function PrintarAluno(vetor, i){
     ra.textContent = vetor[i].ra
     const sexo = document.createElement('td')
     linha.appendChild(sexo)
-    sexo.textContent = vetor[i].sexo
+    sexo.textContent = vetor[i].sexo == 'M' ? 'Masculino' : 'Feminino'
     const media = document.createElement('td')
     linha.appendChild(media)
     media.textContent = vetor[i].media
     const aprovado = document.createElement('td')
     linha.appendChild(aprovado)
-    aprovado.textContent = vetor[i].aprovado
+    aprovado.textContent = vetor[i].aprovado ? 'Aprovado' : 'Reprovado'
+}
+function GerarLinhaCabecalho(){
+    const tabelaCabecalho = document.createElement('tr')
+    elementos.tabelaRelatorio.appendChild(tabelaCabecalho)
+    const nome = document.createElement('th')
+    tabelaCabecalho.appendChild(nome)
+    nome.textContent = "Nome do Aluno"
+    const ra = document.createElement('th')
+    tabelaCabecalho.appendChild(ra)
+    ra.textContent = "RA"
+    const sexo = document.createElement('th')
+    tabelaCabecalho.appendChild(sexo)
+    sexo.textContent = "Sexo"
+    const media = document.createElement('th')
+    tabelaCabecalho.appendChild(media)
+    media.textContent = "Média"
+    const aprovado = document.createElement('th')
+    tabelaCabecalho.appendChild(aprovado)
+    aprovado.textContent = "Resultado"
 }
