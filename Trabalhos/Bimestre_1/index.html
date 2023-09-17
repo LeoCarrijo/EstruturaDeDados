@@ -24,7 +24,12 @@
     <label><input type="radio" name="sexo" id="fem" value="Feminino">Feminino</label><br>
     <label for="media">Média: </label>
     <input type="number" name="media" id="media"><br>
-    <label for="resultado">Resultado: </label>
-    <input type="number" name="resultado" id="resultado">
+    <label>Aprovado: <input type="checkbox" id="aprovado"></label>
+    <input type="button" value="Cadastrar Aluno" onclick="EnviarDados()">
+    <div class="resposta">
+        Resposta
+    </div>
+
+    <script src="Scripts/Cadastrador.mjs"></script>
 </body>
 </html>
