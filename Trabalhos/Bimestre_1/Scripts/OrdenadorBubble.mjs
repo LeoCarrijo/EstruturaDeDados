@@ -1,7 +1,5 @@
 import { alunos } from '../Dados/alunos.mjs'
 
-
-
 function OrdenarBubble(vetor, fnComp) { // Função que ordena o vetor passado com o BubbleSort
     let swap, passadas = 0, comparacoes = 0, trocas = 0
     do{
