@@ -18,7 +18,15 @@
     }
     .inputs {
         @include caixa-formulario;
+        padding-right: 10px;
         grid-area: inputs;
         align-items: flex-start;
+        input {
+            border-radius: 8px;
+            &:focus {
+                background-image: linear-gradient(to right, $cor-3 35%, white 65%);
+            }
+        }
+        border-right: 2px dashed black;
     }
 }

@@ -61,6 +61,14 @@ const alunos = [{
     sexo: 'M',
     media: 5,
     aprovado: false
+},
+{
+    nome: 'Pedro Henrique Mota',
+    ra:'1090482223001',
+    idade: 19,
+    sexo: 'M',
+    media: 10,
+    aprovado: true
 }
 ]
 let elementos = {
@@ -73,6 +81,14 @@ let elementos = {
     tabelaRelatorio: document.querySelector('table.tabela__relatorio')
 }
 
+function ResetarValores(){
+    elementos.nome.value = ''
+    elementos.ra.value = ''
+    elementos.idade.value = ''
+    elementos.sexoM.checked = true
+    elementos.media.value = ''
+    elementos.aprovado.checked = false
+}
 function OrdenarBubble(vetor, fnComp) { // Função que ordena o vetor passado com o BubbleSort
     let swap, passadas = 0, comparacoes = 0, trocas = 0
     do{
@@ -113,6 +129,7 @@ function EnviarDados() {
     Cadastrar(Aluno)
     alert(`Aluno ${alunos[alunos.length - 1].nome} Cadastrado!`)
     GerarRelatorio(alunos, false)
+    ResetarValores()
 }
 function Cadastrar(aluno) { // Função que recebe um aluno e o inclui na lista
     alunos.push(aluno)
