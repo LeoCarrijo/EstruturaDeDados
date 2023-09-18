@@ -23,7 +23,7 @@ const alunos = [{ // Lista que armazena os alunos
     aprovado: true
 },
 {
-    nome: 'Cubinha',
+    nome: 'Mateus Cuba',
     ra: '1090482223023',
     idade: 28,
     sexo: 'M',
@@ -47,7 +47,7 @@ const alunos = [{ // Lista que armazena os alunos
     aprovado: true
 },
 {
-    nome: 'Erick',
+    nome: 'Erick Ricardo',
     ra: '1090482223010',
     idade: 23,
     sexo: 'M',
