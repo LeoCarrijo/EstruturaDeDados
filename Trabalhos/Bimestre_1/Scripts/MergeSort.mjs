@@ -15,10 +15,10 @@ function Merge(vetorEsquerdo, vetorDireito) {
 
     while(iEsquerdo < vetorEsquerdo.length && iDireito < vetorDireito){
         if(vetorEsquerdo[iEsquerdo] < vetorDireito[iDireito]){
-            vetorFinal.push(vetorEsquerdo)
+            vetorFinal.push(vetorEsquerdo[iEsquerdo])
             iEsquerdo++
         }else{
-            vetorFinal.push(vetorDireito)
+            vetorFinal.push(vetorDireito[iDireito])
             iDireito++
         }
     }
