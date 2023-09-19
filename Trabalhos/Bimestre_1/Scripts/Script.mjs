@@ -47,6 +47,14 @@ const alunos = [{ // Lista que armazena os alunos
     aprovado: true
 },
 {
+    nome: 'Lucas de Paula Melo',
+    ra: '1090482223042',
+    idade: 20,
+    sexo: 'M',
+    media: 10,
+    aprovado: true
+},
+{
     nome: 'Erick Ricardo',
     ra: '1090482223010',
     idade: 23,
