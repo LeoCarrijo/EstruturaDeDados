@@ -1,20 +1,15 @@
-livros = 'DFGNMHRQSYVZ'
-livrosOrganizados = sorted(livros)
-vezesLido = 0; flag = False
+livros = list('DFGNMHRQSYVZ')
+livrosOrg = sorted(livros)
+tamLivros = len(livros)
 
-print(livros)
-print(livrosOrganizados)
+print('Org:', end=' ')
+for i in range(tamLivros):
+    print(livrosOrg[i], end=' ')
+print('\nDes:', end=' ')
+for i in range(tamLivros):
+    print(livros[i], end=' ')
+print('')
 
-for i in range(len(livros)):
-    livroAtual = livros[i]
-    diff = livros.index(livroAtual) - livrosOrganizados.index(livroAtual)
-    
-    if diff > 5:
-        print('A Database System student read a book\n')
-        flag = True
-        break
-    if diff > 0:
-        print(f'O livro {livroAtual} foi lido {diff} vezes')
-        vezesLido += diff
-if not flag:
-    print(vezesLido)
+for i in range(tamLivros):
+    if livrosOrg[i] != livros[i]:
+        print(f'{livros[i]} esta na posicao errada')
