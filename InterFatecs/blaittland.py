@@ -17,17 +17,32 @@ for i in range(tamLivros):
         print(f'{livros[i]} esta na posicao errada')
         posCerta = livrosOrg.index(livros[i]); posAtual = i
         DSstudent = 0
-        while posAtual < posCerta:
-            # print(posAtual)
-            [livros[posAtual], livros[posAtual + 1]] = [livros[posAtual + 1], livros[posAtual]]
-            print(f'Mudei {livros[posAtual + 1]} com {livros[posAtual]}')
-            posAtual += 1
-            livrosLidos.append(livros[posAtual])
-            DSstudent += 1
-            print(f'DSstudent: {DSstudent}')
-            for i in range(tamLivros):
-                print(livros[i], end=' ')
-            print('\n')
+        if posAtual < posCerta:
+            while posAtual < posCerta:
+                # print(posAtual)
+                [livros[posAtual], livros[posAtual + 1]] = [livros[posAtual + 1], livros[posAtual]]
+                print(f'Mudei {livros[posAtual + 1]} com {livros[posAtual]}')
+                posAtual += 1
+                livrosLidos.append(livros[posAtual])
+                DSstudent += 1
+                print(f'DSstudent: {DSstudent}')
+                for i in range(tamLivros):
+                    print(livros[i], end=' ')
+                print('\n')
+        else:
+            while posAtual > posCerta:
+                print(posAtual)
+                [livros[posAtual - 1], livros[posAtual]] = [livros[posAtual], livros[posAtual - 1]]
+                print(f'Mudei {livros[posAtual - 1]} com {livros[posAtual]}')
+                posAtual -= 1
+                livrosLidos.append(livros[posAtual])
+                DSstudent += 1
+                print(f'DSstudent: {DSstudent}')
+                if DSstudent > 5:
+                    break
+                for i in range(tamLivros):
+                    print(livros[i], end=' ')
+                print('\n')
 
 print(livrosLidos)
 print('A Database Systems student read a book.' if DSstudent > 5 else f'{5}')
